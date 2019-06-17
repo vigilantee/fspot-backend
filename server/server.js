@@ -5,7 +5,7 @@ const app=express();
 const APP_PORT = 4000;
 
 app.use(express.json());
-app.use('/api/v1',api_v1_router);
+app.use('/v1',api_v1_router);
 app.listen(APP_PORT,()=>{
     console.log('server is running on port 3000');
 });
