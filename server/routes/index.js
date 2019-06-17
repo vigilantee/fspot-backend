@@ -7,7 +7,7 @@ router.get('/user_info',(req,res,next)=>{
     try{
         db.executeQuery('select id, username, profile_pic from user', results=>res.json(results));
     }catch(e){
-        console.log('Manish Chaava',e);
+        console.log('Error logged....',e);
         res.sendStatus(500);
     }
 });
